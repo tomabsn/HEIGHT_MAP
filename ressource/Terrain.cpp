@@ -132,12 +132,12 @@ namespace PM3D {
 		int k = 0;
 		for (int y = 0; y != height - 1; ++y) {
 			for (int x = 0; x != width - 1; ++x) {
-				pIndices[k++] = y * width + x; //p1
-				pIndices[k++] = (y + 1) * width + x; //p2
-				pIndices[k++] = (y + 1) * width + (x + 1); //p3
-				pIndices[k++] = y * width + x; //p1
-				pIndices[k++] = (y + 1) * width + (x + 1); //p3
-				pIndices[k++] = y * width + (x + 1); //p4
+				pIndices[k++] = y * width + x; //i1
+				pIndices[k++] = (y + 1) * width + x; //i2
+				pIndices[k++] = (y + 1) * width + (x + 1); //i3
+				pIndices[k++] = y * width + x; //i1
+				pIndices[k++] = (y + 1) * width + (x + 1); //i3
+				pIndices[k++] = y * width + (x + 1); //i4
 
 			}
 		}
