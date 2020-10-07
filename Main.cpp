@@ -6,5 +6,5 @@ int main() {
 	CTerrain terrain(0.03921f, 0.03921f, "image/montagne.bmp");
 	terrain.CalculerNormale();
 	terrain.ConstruireIndex();
-	terrain.Sauver("sauvegarde/montagne.obj");
+	terrain.Sauver("montagne.obj");
 }
